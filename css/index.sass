@@ -1,0 +1,633 @@
+// FONT IMPORT
+@import url(http://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700,800|Six+Caps|Open+Sans+Condensed:100,200,300,300italic,400,500,600,700)
+// @import url("_normalize.scss")
+// @import url("susy")
+
+// GRID SUSY
+
+// VARIABLES
+// Colors
+$black: rgba(0,0,0,1)
+$black2: rgba(0,0,0,0.7)
+$black3: rgba(0,0,0,0.5)
+$black4: rgba(0,0,0,0.4)
+$black5: rgba(0,0,0,0.2)
+
+$white: rgba(255,255,255,1)
+$white2: rgba(255,255,255,0.7)
+$white3: rgba(255,255,255,0.5)
+$white4: rgba(255,255,255,0.3)
+
+$orange: rgba(208, 101, 25, 1)
+$orange2: rgba(208, 101, 25, 0.7)
+$orange3: rgba(208, 101, 25, 0.5)
+
+$grey: rgba(56, 62, 66, 1)
+$grey2: rgba(56, 62, 66, 0.5)
+
+$none: rgba(255, 255, 255, 0)
+
+// Fonts
+$header: 'Advent Pro', sans-serif
+$body: 'Open Sans Condensed', sans-serif
+
+// DESIGN
+
+// BASE
+html
+	height: 100%
+	margin: 0
+	padding: 0
+	width: 100%
+	background-image: url(../img/pattern/small/tweed.png)
+body
+	height: 100%
+	width: 100%
+	font-size: 100%
+	font-family: $header
+	margin: 0
+	padding: 0
+
+\::-webkit-input-placeholder
+	color: $white4
+\:-moz-placeholder
+	color: $white4
+\::-moz-placeholder
+	color: $white4
+\:-ms-input-placeholder 
+	color: $white4
+
+// EXTENDS
+.sectionhead
+	display: block
+	font-family: $body
+	font-size: 350%
+	font-weight: 600
+	color: $orange
+	text-shadow: -1px 1px 1px $black4
+	padding: 20px 0px 20px 0px
+	width: 100%
+	background: $white
+	border-bottom: 1px dotted $white3
+	box-shadow: 0px 10px 15px $black2
+	text-align: center
+	@media only screen and (max-width: 500px)
+		font-size: 200%
+		padding: 15px 0px 15px 0px
+
+.subheader
+	margin: auto
+	width: auto
+	display: block
+	font-size: 250%
+	padding: 20px
+	margin-bottom: 30px
+	background-color: $black4
+	font-family: $header
+	font-weight: 600
+	color: $white
+	border-bottom: 1px dotted $white3
+	box-shadow: 0px 10px 15px $black2
+	text-shadow: -2px 2px 0px $black
+	text-align: center
+	@media only screen and (max-width: 500px)
+		font-size: 150%
+		padding: 10px
+
+
+// HEADER
+#container.header
+	clear: both
+	width: 100%
+	overflow: hidden
+	height: auto
+	color: $white
+	text-align: center
+	#header
+		position: relative
+		width: 100%
+		height: auto
+		// min-height: 70vh
+		color: $white
+		overflow: hidden
+		@media only screen and (max-width: 500px)
+			position: none
+			height: auto
+
+		#sotd
+			z-index: 100
+			width: 100%
+			background: $white
+			box-shadow: inset 0px -50px 50px $black4
+			box-shadow: 0px -2px 5px $black4
+			text-align: center
+			border-top: 1px solid $black3
+			border-bottom: 1px solid $orange
+			cursor: pointer
+			padding-bottom: 30px
+			height: auto
+			overflow: hidden
+			h1
+				display: block
+				font-family: $body
+				font-size: 120%
+				padding-top: 20px
+				font-weight: 300
+				margin-bottom: -10px
+				color: $black4
+				text-transform: italic
+				height: auto
+				overflow: hidden
+				@media only screen and (max-width: 500px)
+					font-size: 100%
+			span
+				display: block
+				font-family: $body
+				font-size: 350%
+				font-weight: 600
+				color: $orange
+				text-shadow: -1px 1px 1px $black4
+				@media only screen and (max-width: 500px)
+					font-size: 240%
+		#BG
+			position: absolute
+			float: left
+			width: 100%
+			height: 100%
+			z-index: -10
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: bottom
+		#BG.beton
+			background-image: url(../img/bg_beton.jpg)
+		#BG.menu
+			background-image: url(../img/bg_menu.jpg)
+			display: none
+		#BG.about
+			background-image: url(../img/bg_about.jpg)
+			display: none
+		#BG.contact
+			background-image: url(../img/bg_contact.jpg)
+			display: none
+		#BG.soup
+			background-image: url(../img/bg_soup.jpg)
+			display: none
+	#navcont
+		clear: both
+		width: 100%
+		max-width: 960px
+		margin: auto
+		height: auto
+		padding-top: 25px
+		padding-bottom: 25px
+		z-index: 99
+		overflow: hidden
+		@media only screen and (max-width: 500px)
+			padding-bottom: 0px
+		#navposcont
+			clear: both
+			width: auto
+			max-width: 450px
+			height: auto
+			margin: auto
+			align: center
+			overflow: hidden
+			@media only screen and (max-width: 500px)
+				max-width: 100%
+			#nav
+				width: 90px
+				height: 90px
+				background: $black2
+				margin: 10px
+				border-radius: 50%
+				float: left
+				box-shadow: -2px 5px 10px $black
+				border: 20px solid $white3
+				z-index: 99
+				cursor: pointer
+				margin-top: 30px
+				@media only screen and (max-width: 500px)
+					width: 100%
+					height: 50px
+					border: 0px solid $white3
+					border-bottom: 1px solid $white4
+					border-radius: 0px
+					margin: 0
+					float: clear
+					// float: none
+				h1
+					color: $white
+					text-align: center
+					display: block
+					margin-top: 40%
+					font-size: 100%
+					font-weight: 400
+					letter-spacing: 2px
+					font-family: $body
+					@media only screen and (max-width: 500px)
+						font-size: 110%
+						margin-top: 15px
+						font-weight: 600
+				&:hover
+					background: $white3
+					border: 20px solid $white3
+					color: $black
+					@media only screen and (max-width: 500px)
+						width: 100%
+						height: 50px
+						border: 0px solid $white3
+						border-top: 1px solid $white3
+						border-bottom: 1px solid $white3
+						border-radius: 0px
+						margin: 0
+					h1
+						color: $black
+						font-weight: 800
+		#nav.logo
+			background-image: url(../img/logo/L_orange.svg)
+			background-repeat: no-repeat
+			background-position: center
+			background-color: $none
+			background-size: 350px
+			width: 100%
+			margin: auto
+			height: 400px
+			border-radius: 0
+			box-shadow: none
+			border: none
+			@media only screen and (max-width: 500px)
+				height: 40vh
+				background-size: 41vh
+				margin-bottom: 25px
+
+// CONTENT MENU
+#container.menu
+	clear: both
+	width: 100%
+	height: auto
+	color: $white
+	overflow: hidden
+	text-align: center
+	h1
+		@extend .sectionhead
+	#menu1.nav
+		height: auto
+		overflow: hidden
+		background-color: $orange
+		text-align: center
+		margin: auto
+		box-shadow: 0px 5px 20px $black4
+		#navpos
+			width: 480px
+			margin: auto
+			height: auto
+			@media only screen and (max-width: 500px)
+				width: 330px
+				margin: auto
+			ul li
+				display: block
+				float: left
+				width: 60px
+				height: 60px
+				text-align: center
+				background-color: $black4
+				margin: 20px 10px 20px 10px
+				border-radius: 50%
+				color: $white
+				cursor: pointer
+				background-size: 100%
+				background-repeat: no-repeat
+				background-position: center
+				box-shadow: inset -2px 3px 5px $black3
+				@media only screen and (max-width: 500px)
+					width: 45px
+					height: 45px
+					margin: 10px 5px 10px 5px
+				&:hover
+					background-color: $black3
+			ul li.active
+				background-color: $black2
+				box-shadow: -2px 3px 5px $black3
+			#navsoup
+				background-image: url('../img/ico/ico_soup_orange.svg')
+			#navsalad
+				background-image: url('../img/ico/ico_salad_orange.svg')
+			#navpasta
+				background-image: url('../img/ico/ico_pasta_orange.svg')
+			#navdessert
+				background-image: url('../img/ico/ico_dessert_orange.svg')
+			#navcolddrinks
+				background-image: url('../img/ico/ico_colddrinks_orange.svg')
+			#navhotdrinks
+				background-image: url('../img/ico/ico_hotdrinks_orange.svg')
+	#menu.soup, 
+	#menu.salad, 
+	#menu.pasta, 
+	#menu.dessert, 
+	#menu.colddrinks,
+	#menu.hotdrinks
+		width: 100%
+		height: 100%
+		padding-bottom: 30px
+		h1
+			@extend .subheader
+			box-shadow: 0px 10px 15px $black2 
+		#dish
+			height: auto
+			max-width: 900px
+			margin: auto
+			padding: 0 20px 0 20px
+			h2
+				font-size: 160%
+				font-weight: 400
+				font-family: $body
+				padding: 10px
+				text-align: left
+				border-bottom: 1px dotted $white3
+				@media only screen and (max-width: 500px)
+					font-size: 110%
+					padding: 8px
+				#price
+					margin-left: 5px
+					float: right
+	// #menu.soup,
+	#menu.salad, 
+	#menu.pasta,
+	#menu.dessert,
+	#menu.colddrinks,
+	#menu.hotdrinks,
+		display: none
+		height: 100%
+
+// CONTENT ABOUT
+#container.about
+	min-height: 100vh
+	height: auto
+	width: 100%
+	text-align: center
+	box-shadow: inset 0px 10px 15px $black2 
+	h1
+		@extend .sectionhead 
+	#aboutus
+		max-width: 900px
+		height: auto
+		margin: auto
+		text-align: center
+		text-align: left
+		padding: 20px
+		@media only screen and (max-width: 500px)
+			padding: 5px
+		#about
+			position: relative
+			padding: 20px 0 20px 0
+			height: auto
+			overflow: hidden
+			background: $black5
+			padding: 20px 20px 0px 20px
+			margin: 20px
+			border-radius: 3px
+			box-shadow: inset 2px 2px 2px $black5
+			@media only screen and (max-width: 500px)
+				padding: 10px 10px 0px 10px
+				margin: 15px
+			#image
+				height: 200px
+				width: 100%
+				max-width: 350px
+				float: left
+				background: $black4
+				margin-right: 25px
+				overflow: hidden
+				border-radius: 2px
+				margin-bottom: 20px
+				img
+					max-width: 350px
+					height: auto
+					margin: auto
+			h2
+				font-family: $header
+				font-size: 250%
+				font-weight: 600
+				color: $white
+				margin-bottom: 20px
+				display: block
+				width: 100%
+				line-height: 120%
+				// border-bottom: 1px dotted $black4
+				padding-bottom: 10px
+				text-shadow: 1px 1px 1px $black
+				border-bottom: 1px dotted $white3
+
+				@media only screen and (max-width: 500px)
+					font-size: 200%
+
+			#content
+				font-family: $body
+				font-size: 110%
+				font-weight: 200
+				color: $white
+				margin-bottom: 20px
+				line-height: 150%
+				letter-spacing: 1px
+				@media only screen and (max-width: 500px)
+					letter-spacing: 1px
+					font-size: 100%
+		#about.partners
+			background-color: $none
+			box-shadow: inset 2px 2px 2px $none
+			h2
+				color: $white
+				border-bottom: 1px dotted $white
+			#logo
+				float: left
+				width: 60px
+				height: 60px
+				border: 1px solid $black4
+				margin-bottom: 20px
+				margin-right: 20px
+				background-size: 100%
+				background-repeat: no-repeat
+				background-position: center
+				border-radius: 10px
+				background-color: $white
+				cursor: pointer
+				box-shadow: -2px 5px 5px $black2
+				@media only screen and (max-width: 500px)
+					width: 50px
+					height: 50px
+			#logo.meli
+				background-image: url('../img/logo/meli.png')
+			#logo.tasse
+				background-image: url('../img/logo/tasse.png')
+
+// CONTENT CONTACT
+#container.contact
+	position: relative
+	min-height: 100vh
+	height: auto
+	overflow: hidden
+	width: 100%
+	box-shadow: inset 0px 10px 15px $black2
+	h1
+		@extend .sectionhead
+	form
+		height: auto
+		overflow: hidden
+		width: 96%
+		max-width: 880px
+		margin: auto
+		padding: 200px 2% 200px 2%
+		@media only screen and (max-width: 500px)
+			padding: 30px 2% 30px 2%
+			text-align: center
+		input
+			width: 37.5%
+			margin: auto
+			height: 30px
+			padding: 0
+			margin: 0px 0px 10px 2.5%
+			background: $black4
+			border: none
+			padding: 5px 2.5%
+			float: left
+			box-shadow: 2px 2px 2px $black3
+			border-radius: 3px
+			@media only screen and (max-width: 500px)
+				width: 90%
+				float: clear
+		textarea
+			box-shadow: 2px 2px 2px $black3
+			width: 47.5%
+			margin: auto
+			height: 215px
+			margin: 0px 0px 0px 2.5% 
+			background: $black4
+			border: none
+			padding: 15px 2.5%
+			float: left
+			border-radius: 3px
+			@media only screen and (max-width: 500px)
+				float: clear
+				width: 90%
+				margin-bottom: 30px
+		#btn
+			width: 20%
+			height: 35px
+			background: $orange
+			box-shadow: 2px 2px 2px $black3
+			cursor: pointer
+			font-weight: 400
+			letter-spacing: 0px
+			font-family: $header
+			font-size: 100%
+			line-height: 12px
+			color: $white2
+			padding: 5px 2.5%
+			margin-top: 10px
+			float: right
+			@media only screen and (max-width: 500px)
+				width: 30%
+				margin-right: 2.5%
+				margin-top: 30px
+			&:hover
+
+		#btn.reset
+			background: $black3
+			&:hover
+				background: $white4
+	#contactpos
+		width: 100%
+		bottom: 0px
+	#socialcont
+		width: 100%
+		height: auto
+		overflow: hidden
+		bottom: 0
+		box-shadow: inset 0px 10px 15px $black2
+		#center, #social
+			width: 240px
+			margin: auto
+			height: auto
+			overflow: hidden
+			background: $orange
+		#social
+			width: 100%
+			ul li
+				display: block
+				float: left
+				width: 60px
+				height: 60px
+				text-align: center
+				background-color: $black4
+				margin: 20px 10px 20px 10px
+				border-radius: 50%
+				color: $white
+				cursor: pointer
+				background-size: 60%
+				background-repeat: no-repeat
+				background-position: center
+				box-shadow: inset -2px 3px 5px $black3
+				&:hover
+					background-color: $black2
+			ul li.active
+				background-color: $black2
+				box-shadow: -2px 3px 5px $black3
+			#insta
+				background-image: url('../img/ico/icons_insta.svg')
+			#face
+				background-image: url('../img/ico/icons_face.svg')
+			#twitter
+				background-image: url('../img/ico/icons_twitter.svg')
+	h2
+		@extend .subheader
+		margin-bottom: 0px
+	#adress
+		word-break: keep-all
+		width: 100%
+		height: auto
+		overflow: hidden
+		color: $white
+		font-family: $body
+		font-size: 120%
+		padding: 20px 0px 20px
+		font-weight: 00
+		line-height:  30px
+		text-align: center
+		background-color: $orange
+		b 
+			color: $black4
+			font-weight: 600
+
+// MAP
+#container.map
+	width: 100%
+	height: 50vh
+	color: $black
+	z-index: 99
+	#map 
+		position: relative
+		width: 100%
+		height: 100%
+		box-shadow: inset 0px 30px 20px $black4
+		overflow: hidden
+		#mapcont
+			position: relative
+			width: 100%
+			height: 100%
+			margin-left: 0px
+			background: $black3
+			#gmap_canvas
+				position: relative
+				width: 100%
+				height: 100%
+				background: $black4 !important
+
+// - Google Maps
+a[href^="http://maps.google.com/maps"]
+	display: none !important
+
+.gmnoprint a, .gmnoprint span
+	display: none
+
+.gmnoprint div
+	background: none !important

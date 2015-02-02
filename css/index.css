@@ -1,0 +1,638 @@
+@import url(http://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700,800|Six+Caps|Open+Sans+Condensed:100,200,300,300italic,400,500,600,700);
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-image: url(../img/pattern/small/tweed.png); }
+
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-family: "Advent Pro", sans-serif;
+  margin: 0;
+  padding: 0; }
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.3); }
+
+:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3); }
+
+::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3); }
+
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3); }
+
+.sectionhead, #container.menu h1, #container.about h1, #container.contact h1 {
+  display: block;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 350%;
+  font-weight: 600;
+  color: #d06519;
+  text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 0px 20px 0px;
+  width: 100%;
+  background: white;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.7);
+  text-align: center; }
+  @media only screen and (max-width: 500px) {
+    .sectionhead, #container.menu h1, #container.about h1, #container.contact h1 {
+      font-size: 200%;
+      padding: 15px 0px 15px 0px; } }
+
+.subheader, #container.menu #menu.soup h1,
+#container.menu #menu.salad h1,
+#container.menu #menu.pasta h1,
+#container.menu #menu.dessert h1,
+#container.menu #menu.colddrinks h1,
+#container.menu #menu.hotdrinks h1, #container.contact h2 {
+  margin: auto;
+  width: auto;
+  display: block;
+  font-size: 250%;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Advent Pro", sans-serif;
+  font-weight: 600;
+  color: white;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.7);
+  text-shadow: -2px 2px 0px black;
+  text-align: center; }
+  @media only screen and (max-width: 500px) {
+    .subheader, #container.menu #menu.soup h1,
+    #container.menu #menu.salad h1,
+    #container.menu #menu.pasta h1,
+    #container.menu #menu.dessert h1,
+    #container.menu #menu.colddrinks h1,
+    #container.menu #menu.hotdrinks h1, #container.contact h2 {
+      font-size: 150%;
+      padding: 10px; } }
+
+#container.header {
+  clear: both;
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  color: white;
+  text-align: center; }
+  #container.header #header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    color: white;
+    overflow: hidden; }
+    @media only screen and (max-width: 500px) {
+      #container.header #header {
+        position: none;
+        height: auto; } }
+    #container.header #header #sotd {
+      z-index: 100;
+      width: 100%;
+      background: white;
+      box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.4);
+      box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      border-top: 1px solid rgba(0, 0, 0, 0.5);
+      border-bottom: 1px solid #d06519;
+      cursor: pointer;
+      padding-bottom: 30px;
+      height: auto;
+      overflow: hidden; }
+      #container.header #header #sotd h1 {
+        display: block;
+        font-family: "Open Sans Condensed", sans-serif;
+        font-size: 120%;
+        padding-top: 20px;
+        font-weight: 300;
+        margin-bottom: -10px;
+        color: rgba(0, 0, 0, 0.4);
+        text-transform: italic;
+        height: auto;
+        overflow: hidden; }
+        @media only screen and (max-width: 500px) {
+          #container.header #header #sotd h1 {
+            font-size: 100%; } }
+      #container.header #header #sotd span {
+        display: block;
+        font-family: "Open Sans Condensed", sans-serif;
+        font-size: 350%;
+        font-weight: 600;
+        color: #d06519;
+        text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4); }
+        @media only screen and (max-width: 500px) {
+          #container.header #header #sotd span {
+            font-size: 240%; } }
+    #container.header #header #BG {
+      position: absolute;
+      float: left;
+      width: 100%;
+      height: 100%;
+      z-index: -10;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom; }
+    #container.header #header #BG.beton {
+      background-image: url(../img/bg_beton.jpg); }
+    #container.header #header #BG.menu {
+      background-image: url(../img/bg_menu.jpg);
+      display: none; }
+    #container.header #header #BG.about {
+      background-image: url(../img/bg_about.jpg);
+      display: none; }
+    #container.header #header #BG.contact {
+      background-image: url(../img/bg_contact.jpg);
+      display: none; }
+    #container.header #header #BG.soup {
+      background-image: url(../img/bg_soup.jpg);
+      display: none; }
+  #container.header #navcont {
+    clear: both;
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    z-index: 99;
+    overflow: hidden; }
+    @media only screen and (max-width: 500px) {
+      #container.header #navcont {
+        padding-bottom: 0px; } }
+    #container.header #navcont #navposcont {
+      clear: both;
+      width: auto;
+      max-width: 450px;
+      height: auto;
+      margin: auto;
+      align: center;
+      overflow: hidden; }
+      @media only screen and (max-width: 500px) {
+        #container.header #navcont #navposcont {
+          max-width: 100%; } }
+      #container.header #navcont #navposcont #nav {
+        width: 90px;
+        height: 90px;
+        background: rgba(0, 0, 0, 0.7);
+        margin: 10px;
+        border-radius: 50%;
+        float: left;
+        box-shadow: -2px 5px 10px black;
+        border: 20px solid rgba(255, 255, 255, 0.5);
+        z-index: 99;
+        cursor: pointer;
+        margin-top: 30px; }
+        @media only screen and (max-width: 500px) {
+          #container.header #navcont #navposcont #nav {
+            width: 100%;
+            height: 50px;
+            border: 0px solid rgba(255, 255, 255, 0.5);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 0px;
+            margin: 0;
+            float: clear; } }
+        #container.header #navcont #navposcont #nav h1 {
+          color: white;
+          text-align: center;
+          display: block;
+          margin-top: 40%;
+          font-size: 100%;
+          font-weight: 400;
+          letter-spacing: 2px;
+          font-family: "Open Sans Condensed", sans-serif; }
+          @media only screen and (max-width: 500px) {
+            #container.header #navcont #navposcont #nav h1 {
+              font-size: 110%;
+              margin-top: 15px;
+              font-weight: 600; } }
+        #container.header #navcont #navposcont #nav:hover {
+          background: rgba(255, 255, 255, 0.5);
+          border: 20px solid rgba(255, 255, 255, 0.5);
+          color: black; }
+          @media only screen and (max-width: 500px) {
+            #container.header #navcont #navposcont #nav:hover {
+              width: 100%;
+              height: 50px;
+              border: 0px solid rgba(255, 255, 255, 0.5);
+              border-top: 1px solid rgba(255, 255, 255, 0.5);
+              border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+              border-radius: 0px;
+              margin: 0; } }
+          #container.header #navcont #navposcont #nav:hover h1 {
+            color: black;
+            font-weight: 800; }
+    #container.header #navcont #nav.logo {
+      background-image: url(../img/logo/L_orange.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: rgba(255, 255, 255, 0);
+      background-size: 350px;
+      width: 100%;
+      margin: auto;
+      height: 400px;
+      border-radius: 0;
+      box-shadow: none;
+      border: none; }
+      @media only screen and (max-width: 500px) {
+        #container.header #navcont #nav.logo {
+          height: 40vh;
+          background-size: 41vh;
+          margin-bottom: 25px; } }
+
+#container.menu {
+  clear: both;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom:150px;
+  height: auto;
+  color: white;
+  text-align: center; }
+  #container.menu #menu1.nav {
+    height: auto;
+    overflow: hidden;
+    background-color: #d06519;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4); }
+    #container.menu #menu1.nav #navpos {
+      width: 480px;
+      margin: auto;
+      height: auto; }
+      @media only screen and (max-width: 500px) {
+        #container.menu #menu1.nav #navpos {
+          width: 330px;
+          margin: auto; } }
+      #container.menu #menu1.nav #navpos ul li {
+        display: block;
+        float: left;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.4);
+        margin: 20px 10px 20px 10px;
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: inset -2px 3px 5px rgba(0, 0, 0, 0.5); }
+        @media only screen and (max-width: 500px) {
+          #container.menu #menu1.nav #navpos ul li {
+            width: 45px;
+            height: 45px;
+            margin: 10px 5px 10px 5px; } }
+        #container.menu #menu1.nav #navpos ul li:hover {
+          background-color: rgba(0, 0, 0, 0.5); }
+      #container.menu #menu1.nav #navpos ul li.active {
+        background-color: rgba(0, 0, 0, 0.7);
+        box-shadow: -2px 3px 5px rgba(0, 0, 0, 0.5); }
+      #container.menu #menu1.nav #navpos #navsoup {
+        background-image: url("../img/ico/ico_soup_orange.svg"); }
+      #container.menu #menu1.nav #navpos #navsalad {
+        background-image: url("../img/ico/ico_salad_orange.svg"); }
+      #container.menu #menu1.nav #navpos #navpasta {
+        background-image: url("../img/ico/ico_pasta_orange.svg"); }
+      #container.menu #menu1.nav #navpos #navdessert {
+        background-image: url("../img/ico/ico_dessert_orange.svg"); }
+      #container.menu #menu1.nav #navpos #navcolddrinks {
+        background-image: url("../img/ico/ico_colddrinks_orange.svg"); }
+      #container.menu #menu1.nav #navpos #navhotdrinks {
+        background-image: url("../img/ico/ico_hotdrinks_orange.svg"); }
+  #container.menu #menu.soup,
+  #container.menu #menu.salad,
+  #container.menu #menu.pasta,
+  #container.menu #menu.dessert,
+  #container.menu #menu.colddrinks,
+  #container.menu #menu.hotdrinks {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px; }
+    #container.menu #menu.soup h1,
+    #container.menu #menu.salad h1,
+    #container.menu #menu.pasta h1,
+    #container.menu #menu.dessert h1,
+    #container.menu #menu.colddrinks h1,
+    #container.menu #menu.hotdrinks h1 {
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.7); }
+    #container.menu #menu.soup #dish,
+    #container.menu #menu.salad #dish,
+    #container.menu #menu.pasta #dish,
+    #container.menu #menu.dessert #dish,
+    #container.menu #menu.colddrinks #dish,
+    #container.menu #menu.hotdrinks #dish {
+      height: auto;
+      max-width: 900px;
+      margin: auto;
+      padding: 0 20px 0 20px; }
+      #container.menu #menu.soup #dish h2,
+      #container.menu #menu.salad #dish h2,
+      #container.menu #menu.pasta #dish h2,
+      #container.menu #menu.dessert #dish h2,
+      #container.menu #menu.colddrinks #dish h2,
+      #container.menu #menu.hotdrinks #dish h2 {
+        font-size: 160%;
+        font-weight: 400;
+        font-family: "Open Sans Condensed", sans-serif;
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px dotted rgba(255, 255, 255, 0.5); }
+        @media only screen and (max-width: 500px) {
+          #container.menu #menu.soup #dish h2,
+          #container.menu #menu.salad #dish h2,
+          #container.menu #menu.pasta #dish h2,
+          #container.menu #menu.dessert #dish h2,
+          #container.menu #menu.colddrinks #dish h2,
+          #container.menu #menu.hotdrinks #dish h2 {
+            font-size: 110%;
+            padding: 8px; } }
+        #container.menu #menu.soup #dish h2 #price,
+        #container.menu #menu.salad #dish h2 #price,
+        #container.menu #menu.pasta #dish h2 #price,
+        #container.menu #menu.dessert #dish h2 #price,
+        #container.menu #menu.colddrinks #dish h2 #price,
+        #container.menu #menu.hotdrinks #dish h2 #price {
+          margin-left: 5px;
+          float: right; }
+  #container.menu #menu.salad,
+  #container.menu #menu.pasta,
+  #container.menu #menu.dessert,
+  #container.menu #menu.colddrinks,
+  #container.menu #menu.hotdrinks {
+    display: none;
+    height: 100%; }
+
+#container.about {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.7); }
+  #container.about #aboutus {
+    max-width: 900px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    text-align: left;
+    padding: 20px; }
+    @media only screen and (max-width: 500px) {
+      #container.about #aboutus {
+        padding: 5px; } }
+    #container.about #aboutus #about {
+      position: relative;
+      padding: 20px 0 20px 0;
+      height: auto;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 20px 20px 0px 20px;
+      margin: 20px;
+      border-radius: 3px;
+      box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2); }
+      @media only screen and (max-width: 500px) {
+        #container.about #aboutus #about {
+          padding: 10px 10px 0px 10px;
+          margin: 15px; } }
+      #container.about #aboutus #about #image {
+        height: 200px;
+        width: 100%;
+        max-width: 350px;
+        float: left;
+        background: rgba(0, 0, 0, 0.4);
+        margin-right: 25px;
+        overflow: hidden;
+        border-radius: 2px;
+        margin-bottom: 20px; }
+        #container.about #aboutus #about #image img {
+          max-width: 350px;
+          height: auto;
+          margin: auto; }
+      #container.about #aboutus #about h2 {
+        font-family: "Advent Pro", sans-serif;
+        font-size: 250%;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 20px;
+        display: block;
+        width: 100%;
+        line-height: 120%;
+        padding-bottom: 10px;
+        text-shadow: 1px 1px 1px black;
+        border-bottom: 1px dotted rgba(255, 255, 255, 0.5); }
+        @media only screen and (max-width: 500px) {
+          #container.about #aboutus #about h2 {
+            font-size: 200%; } }
+      #container.about #aboutus #about #content {
+        font-family: "Open Sans Condensed", sans-serif;
+        font-size: 110%;
+        font-weight: 200;
+        color: white;
+        margin-bottom: 20px;
+        line-height: 150%;
+        letter-spacing: 1px; }
+        @media only screen and (max-width: 500px) {
+          #container.about #aboutus #about #content {
+            letter-spacing: 1px;
+            font-size: 100%; } }
+    #container.about #aboutus #about.partners {
+      background-color: rgba(255, 255, 255, 0);
+      box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0); }
+      #container.about #aboutus #about.partners h2 {
+        color: white;
+        border-bottom: 1px dotted white; }
+      #container.about #aboutus #about.partners #logo {
+        float: left;
+        width: 60px;
+        height: 60px;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        margin-bottom: 20px;
+        margin-right: 20px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+        background-color: white;
+        cursor: pointer;
+        box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.7); }
+        @media only screen and (max-width: 500px) {
+          #container.about #aboutus #about.partners #logo {
+            width: 50px;
+            height: 50px; } }
+      #container.about #aboutus #about.partners #logo.meli {
+        background-image: url("../img/logo/meli.png"); }
+      #container.about #aboutus #about.partners #logo.tasse {
+        background-image: url("../img/logo/tasse.png"); }
+
+#container.contact {
+  position: relative;
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.7); }
+  #container.contact form {
+    height: auto;
+    overflow: hidden;
+    width: 96%;
+    max-width: 880px;
+    margin: auto;
+    padding: 200px 2% 200px 2%; }
+    @media only screen and (max-width: 500px) {
+      #container.contact form {
+        padding: 30px 2% 30px 2%;
+        text-align: center; } }
+    #container.contact form input {
+      width: 37.5%;
+      margin: auto;
+      height: 30px;
+      padding: 0;
+      margin: 0px 0px 10px 2.5%;
+      background: rgba(0, 0, 0, 0.4);
+      border: none;
+      padding: 5px 2.5%;
+      float: left;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      border-radius: 3px; }
+      @media only screen and (max-width: 500px) {
+        #container.contact form input {
+          width: 90%;
+          float: clear; } }
+    #container.contact form textarea {
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      width: 47.5%;
+      margin: auto;
+      height: 215px;
+      margin: 0px 0px 0px 2.5%;
+      background: rgba(0, 0, 0, 0.4);
+      border: none;
+      padding: 15px 2.5%;
+      float: left;
+      border-radius: 3px; }
+      @media only screen and (max-width: 500px) {
+        #container.contact form textarea {
+          float: clear;
+          width: 90%;
+          margin-bottom: 30px; } }
+    #container.contact form #btn {
+      width: 20%;
+      height: 35px;
+      background: #d06519;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      font-weight: 400;
+      letter-spacing: 0px;
+      font-family: "Advent Pro", sans-serif;
+      font-size: 100%;
+      line-height: 12px;
+      color: rgba(255, 255, 255, 0.7);
+      padding: 5px 2.5%;
+      margin-top: 10px;
+      float: right; }
+      @media only screen and (max-width: 500px) {
+        #container.contact form #btn {
+          width: 30%;
+          margin-right: 2.5%;
+          margin-top: 30px; } }
+    #container.contact form #btn.reset {
+      background: rgba(0, 0, 0, 0.5); }
+      #container.contact form #btn.reset:hover {
+        background: rgba(255, 255, 255, 0.3); }
+  #container.contact #contactpos {
+    width: 100%;
+    bottom: 0px; }
+  #container.contact #socialcont {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    bottom: 0;
+    box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.7); }
+    #container.contact #socialcont #center, #container.contact #socialcont #social {
+      width: 240px;
+      margin: auto;
+      height: auto;
+      overflow: hidden;
+      background: #d06519; }
+    #container.contact #socialcont #social {
+      width: 100%; }
+      #container.contact #socialcont #social ul li {
+        display: block;
+        float: left;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.4);
+        margin: 20px 10px 20px 10px;
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: inset -2px 3px 5px rgba(0, 0, 0, 0.5); }
+        #container.contact #socialcont #social ul li:hover {
+          background-color: rgba(0, 0, 0, 0.7); }
+      #container.contact #socialcont #social ul li.active {
+        background-color: rgba(0, 0, 0, 0.7);
+        box-shadow: -2px 3px 5px rgba(0, 0, 0, 0.5); }
+      #container.contact #socialcont #social #insta {
+        background-image: url("../img/ico/icons_insta.svg"); }
+      #container.contact #socialcont #social #face {
+        background-image: url("../img/ico/icons_face.svg"); }
+      #container.contact #socialcont #social #twitter {
+        background-image: url("../img/ico/icons_twitter.svg"); }
+  #container.contact h2 {
+    margin-bottom: 0px; }
+  #container.contact #adress {
+    word-break: keep-all;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    color: white;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 120%;
+    padding: 20px 0px 20px;
+    font-weight: 0;
+    line-height: 30px;
+    text-align: center;
+    background-color: #d06519; }
+    #container.contact #adress b {
+      color: rgba(0, 0, 0, 0.4);
+      font-weight: 600; }
+
+#container.map {
+  width: 100%;
+  height: 50vh;
+  color: black;
+  z-index: 99; }
+  #container.map #map {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 30px 20px rgba(0, 0, 0, 0.4);
+    overflow: hidden; }
+    #container.map #map #mapcont {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin-left: 0px;
+      background: rgba(0, 0, 0, 0.5); }
+      #container.map #map #mapcont #gmap_canvas {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4) !important; }
+
+a[href^="http://maps.google.com/maps"] {
+  display: none !important; }
+
+.gmnoprint a, .gmnoprint span {
+  display: none; }
+
+.gmnoprint div {
+  background: none !important; }
+
+/*# sourceMappingURL=index.css.map */

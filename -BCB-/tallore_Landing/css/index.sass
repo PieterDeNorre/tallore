@@ -1,0 +1,189 @@
+@import url(http://fonts.googleapis.com/css?family=Advent+Pro:100,300,500,700|Six+Caps|Open+Sans+Condensed:300,300italic,700)
+
+// VARIABELS
+$color1: rgba(208, 101, 25, 1)
+$color2: rgba(76, 82, 86, 1)
+$colortext: #FFF
+
+$font1: 'Advent Pro', sans-serif
+$font2: 'Open Sans Condensed', sans-serif
+
+$f100: 100
+$f200: 200
+$f300: 300
+$f400: 400
+$f500: 500
+$f600: 600
+$f700: 700
+$f800: 800
+
+html
+	width: 100%
+	height: 100%
+	margin: 0
+	padding: 0
+	font-size: 2em
+	font-family: $font1
+	font-weight: $f700
+
+body
+	height: 100%
+	width: 100%
+	font-size: 100%
+	color: $colortext
+
+h1
+	display: block
+	padding: 10px 0 10px 0
+	border-bottom: 1px dotted  $colortext
+	margin: 0 0 50px 0
+
+p
+	font-family: $font2
+	font-weight: $f700
+	font-size: 60%
+	line-height: 1.5em
+
+
+//  HEADER NAV LOGO
+
+#nav
+	padding: 10px 10% 10px 10%
+	width: 80%
+	height: 40px
+	background-color: $color1
+	line-height: 1.5em
+	font-size: 75%
+
+#header
+	width: 80%
+	height: 550px 
+	padding: 40px 10% 150px 10%
+	background-image: url('../img/bg_beton.jpg')
+	background-size: cover
+	background-position: center
+	overflow: hidden
+	text-align: center
+	h1
+		border-bottom: 0px
+		font-size: 200%
+
+
+#logo
+	position: relative
+	width: 100%
+	height: 85%
+	background-image: url('../img/logo/L_orange.svg')
+	background-position: center
+	background-repeat: no-repeat
+
+// CONTENT
+
+#content
+	position: relative
+	width: 80%
+	padding: 50px 10% 100px 10%
+	min-height: 600px 
+	background-color: $color2
+	p.adr
+		font-weight: $f700
+		display: block
+		text-align: center
+		margin: 10px 0 50px 0
+		font-size: 70%
+		b
+			color: $color1
+			margin: 0 10px 0 10px
+			white-space: nowrap
+
+#plan
+	// background-color: $color1
+	height: 400px
+	margin: 10px 0 100px 0
+	background-image: url('../img/map/map.svg')
+	background-position: top center
+	background-repeat: no-repeat
+
+
+#content a
+	color: $color1
+	text-decoration: none
+
+#content a:hover
+	color: $colortext
+	text-decoration: none
+
+	
+
+//  FOOTER
+
+#footer
+	position: relative
+	width: 80%
+	padding: 50px 10% 150px 10%
+	background-color: $color1
+
+#soccont
+	width: 100%
+	height: 60px
+	margin-bottom: 50px
+
+#social
+	position: relative
+	float: left
+	width: 50px
+	height: 50px
+	border-radius: 30px
+	margin: 0 10px 10px 0
+	background-color: $colortext
+	background-repeat: no-repeat
+	background-position: center
+	background-size: 50%
+	cursor: pointer
+	font-size: 50%
+	text-align: center
+	line-height: 3.5em
+	color: $color1
+	b
+		color: $color2
+		margin: 0 10px 0 10px
+		white-space: nowrap
+		font-weight: $f700
+
+
+
+#social:hover
+	background-color: $color1
+
+#social.tel
+	width: 200px
+
+#social.address
+	width: 300px
+
+#social.tel:hover,
+#social.address:hover
+	background-color: $colortext
+	cursor: default
+
+.facebook 
+	background-image: url('../img/ico/icons_face.svg')
+
+.twitter
+	background-image: url('../img/ico/icons_twitter.svg')
+
+.insta
+	background-image: url('../img/ico/icons_insta.svg')
+
+.contact
+	background-image: url('../img/ico/icons_mail.svg')
+
+
+
+
+
+// @media only screen and (max-width: 480px)
+// @media only screen and (min-width: 481px) and (max-width: 768px)
+// @media only screen and (min-width: 769px) and (max-width: 1224px)
+// @media only screen and (min-width: 1225px) and (max-width: 1600px)
+// @media only screen and (min-width: 1601px)
